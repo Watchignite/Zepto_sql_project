@@ -63,7 +63,9 @@ CREATE TABLE zepto (
   quantity INTEGER
 );
 ```
-
+### Data Import
+● Point one  Loaded CSV using pgAdmin's import feature.
+If you're not able to use the import feature, write this code instead:
 
 
 
