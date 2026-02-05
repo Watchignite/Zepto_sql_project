@@ -6,6 +6,6 @@ This is a complete, real-world data analyst portfolio project based on an e-comm
 
 This project is perfect for:
 
--📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn
--📚 Anyone learning SQL hands-on
--💼 Preparing for interviews in retail, e-commerce, or product analytics
+📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn <br>
+📚 Anyone learning SQL hands-on
+💼 Preparing for interviews in retail, e-commerce, or product analytics
