@@ -61,7 +61,8 @@ CREATE TABLE zepto (
   weightInGms INTEGER,
   outOfStock BOOLEAN,
   quantity INTEGER
-);```
+);
+```
 
 
 
