@@ -130,6 +130,8 @@ FROM zepto
 ORDER BY discount_percentage DESC
 LIMIT 10;
 ```
+#### Objective:
+To identify the products offering the highest discount, helping understand which items provide maximum value to customers and are likely driving higher conversions.
 ### Q2) High-MRP Products That Are Out of Stock
 ```sql
 SELECT DISTINCT name, mrp, out_of_stock 
@@ -187,7 +189,32 @@ FROM zepto
 GROUP BY category
 ORDER BY total_weight;
 ```
+## 🧠 Key Insights
 
+● Many products have duplicate names, indicating variations or multiple SKUs.
+
+● Some high-MRP products are out of stock, showing potential supply & demand gaps.
+
+● Certain categories generate significantly higher revenue, guiding stock placement.
+
+● Price-per-gram analysis helps identify the best-value products for customers.
+
+● Weight classification helps in logistics, packaging, and delivery planning.
+
+## 🚀 How to Run the Project
+
+● Install PostgreSQL / MySQL / SQL tool of your choice
+
+● Import the dataset into the table
+
+● Run the SQL queries in sequence
+
+● View insights and export results
+
+## 📝 Conclusion
+
+This SQL project helps understand product distribution, pricing insights, discount behavior, stock trends, and category-level performance within Zepto’s catalog.
+It demonstrates strong skills in SQL, data cleaning, analysis, and real-world business insights.
 
 
 
