@@ -130,8 +130,7 @@ FROM zepto
 ORDER BY discount_percentage DESC
 LIMIT 10;
 ```
-#### Objective:
-To identify the products offering the highest discount, helping understand which items provide maximum value to customers and are likely driving higher conversions.
+#### Objective:To identify the products offering the highest discount, helping understand which items provide maximum value to customers and are likely driving higher conversions.
 ### Q2) High-MRP Products That Are Out of Stock
 ```sql
 SELECT DISTINCT name, mrp, out_of_stock 
@@ -139,6 +138,7 @@ FROM zepto
 WHERE out_of_stock = 'TRUE'
 ORDER BY mrp DESC;
 ```
+#### Objective:To detect premium or expensive items that are unavailable, indicating potential supply chain issues, lost revenue opportunities, or items in high demand.
 ### Q3) Estimated Revenue for Each Category
 ```sql
 SELECT category,
@@ -147,6 +147,7 @@ FROM zepto
 GROUP BY category
 ORDER BY total_revenue_by_category DESC;
 ```
+#### Objective:To measure the total potential revenue contribution of each category based on available stock and selling price, enabling category-level performance comparison.
 ### Q4) Products with MRP > ₹500 and Discount < 10%
 ```sql
 SELECT DISTINCT name, mrp, discount_percentage
@@ -154,6 +155,7 @@ FROM zepto
 WHERE mrp > 500 AND discount_percentage < 10
 ORDER BY mrp DESC, discount_percentage DESC;
 ```
+#### Objective:To identify high-value products that offer minimal discounts, highlighting premium items or categories maintaining high profit margins.
 ### Q5) Top 5 Categories with Highest Average Discount %
 ```sql
 SELECT DISTINCT category,
@@ -163,6 +165,7 @@ GROUP BY category
 ORDER BY average_discount_percentage DESC
 LIMIT 5;
 ```
+#### Objective:To determine which categories are most heavily discounted overall, helping understand promotional strategies and customer value opportunities by category.
 ### Q6) Price per Gram Calculation (for items above 100g)
 ```sql
 SELECT DISTINCT name, weight_inGms, discounted_selling_price,
@@ -171,6 +174,7 @@ FROM zepto
 WHERE weight_inGms >= 100
 ORDER BY price_per_gram;
 ```
+#### Objective:To compute unit cost (price per gram) to evaluate product value, ensuring transparent comparison of similar items based on quantity and pricing.
 ### Q7) Categorize Weight into LOW / MEDIUM / BULK
 ```sql
 SELECT DISTINCT name, weight_inGms,
@@ -181,6 +185,7 @@ CASE
 END AS weight_category
 FROM zepto;
 ```
+#### Objective:To categorize items for logistics, stocking, packaging, and delivery optimization based on weight ranges.
 ### Q8) Total Inventory Weight per Category
 ```sql
 SELECT category,
@@ -189,6 +194,7 @@ FROM zepto
 GROUP BY category
 ORDER BY total_weight;
 ```
+#### Objective:To estimate the overall physical load contributed by each product category, useful for warehousing, transportation planning, and space allocation.
 ## 🧠 Key Insights
 
 ● Many products have duplicate names, indicating variations or multiple SKUs.
@@ -215,6 +221,10 @@ ORDER BY total_weight;
 
 This SQL project helps understand product distribution, pricing insights, discount behavior, stock trends, and category-level performance within Zepto’s catalog.
 It demonstrates strong skills in SQL, data cleaning, analysis, and real-world business insights.
+
+## 👨‍💻 Author — Kothur Charan Reddy - STUDENT
+This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+## 💡 Thanks for checking out the project! Your support means a lot — feel free to star ⭐ this repo or share it with someone learning SQL.🚀
 
 
 
