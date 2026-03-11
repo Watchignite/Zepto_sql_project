@@ -87,7 +87,7 @@ OR weight_inGms IS NULL
 OR out_of_stock IS NULL
 OR quantity IS NULL;
 ```
-### ✔️ Identify products with zero prices
+### ✔️ Identify the products with zero prices
 ```sql
 SELECT * FROM zepto
 WHERE mrp = 0 OR discounted_selling_price = 0;
